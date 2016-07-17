@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Engine Search</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/modern-style.css" />
+    <link rel="stylesheet" href="/styles/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+</head>
+
+<body>
+    <!--<div id="form-main">
+        <div id="form-div">
+            <form class="form" id="form1">
+
+                <p class="fly-from">
+                    <input name="fly-from" type="text" class="feedback-input" placeholder="Example: San Jose, Costa Rica" id="fly-from" />
+                </p>
+
+                <p class="fly-to">
+                    <input name="fly-to" type="text" class="feedback-input" id="fly-to" placeholder="Ex. Melbourne, Autralia" />
+                </p>
+
+                <p class="fly-date">
+
+                    <input type="date" name="fly-date" class="feedback-input" id="fly-date" placeholder="Comment"></input>
+                </p>
+
+
+                <div class="submit">
+                    <input type="submit" value="Search" id="button-blue" />
+                    <div class="ease"></div>
+                </div>
+            </form>
+        </div>
+        </div>-->
+    <div class="text-center" style="padding:50px 0">
+        <div class="logo">
+            <p>Cheaper Flight</p>
+            <i class="fa fa-plane"></i>
+        </div>
+        <!-- Main Form -->
+        <div class="login-form-1">
+            <form id="form1" class="text-left">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                        <div class="form-group">
+                            <label for="fly-from" class="sr-only">From</label>
+                            <input required type="text" class="form-control" id="fly-from" name="fly-from" placeholder="Sydney, Australia">
+                        </div>
+                        <div class="form-group">
+                            <label for="fly-to" class="sr-only">to</label>
+                            <input required type="text" class="form-control" id="fly-to" name="fly-to" placeholder="Sydney, Canada">
+                        </div>
+                        <div class="form-group">
+                            <label for="fly-date" class="sr-only">Date</label>
+                            <input required type="date" class="form-control" id="fly-date" name="fly-date">
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                </div>
+
+            </form>
+        </div>
+        <!-- end:Main Form -->
+    </div>
+    <!--Call your modal-->
+    <!-- Button to trigger modal -->
+
+    <div id="loader" class="loader"></div>
+    <div id="taskListDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel">
+        <div class="modal-header">
+            <h3>Flight List</h3>
+        </div>
+        <div class="modal-body">
+            <div class="tabbable">
+                <!-- Only required for left/right tabs -->
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a id="tab1" href="#tab-pane1" data-toggle="tab"></a>
+                    </li>
+                    <li>
+                        <a id="tab2" href="#tab-pane2" data-toggle="tab"></a>
+                    </li>
+                    <li class="active">
+                        <a id="tab3" href="#tab-pane3" data-toggle="tab"></a>
+                    </li>
+                    <li>
+                        <a id="tab4" href="#tab-pane4" data-toggle="tab"></a>
+                    </li>
+                    <li>
+                        <a id="tab5" href="#tab-pane5" data-toggle="tab"></a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="tab-pane1">
+                       
+                    </div>
+                    <div class="tab-pane" id="tab-pane2">
+
+                    </div>
+                    <div class="tab-pane active" id="tab-pane3">
+
+                    </div>
+                    <div class="tab-pane" id="tab-pane4">
+
+                    </div>
+                    <div class="tab-pane" id="tab-pane5">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
